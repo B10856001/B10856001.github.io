@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書籍列表</title>
+</head>
+<style>
+    .rwd-table {
+        overflow: hidden;
+        color: antiquewhite;
+    }
+    
+    .rwd-table th,
+    .rwd-table td {
+        margin: 0em 1em;
+    }
+    
+    .rwd-table {
+        min-width: 100%;
+    }
+    
+    .rwd-table th {
+        display: none;
+    }
+    
+    .rwd-table td {
+        display: block;
+    }
+    
+    .rwd-table td:before {
+        content: attr(data-th) " : ";
+        font-weight: bold;
+        width: 6.5em;
+        display: inline-block;
+    }
+    
+    .rwd-table th,
+    .rwd-table td {
+        text-align: left;
+    }
+    
+    .rwd-table th,
+    .rwd-table td:before {
+        color: antiquewhite;
+        font-weight: bold;
+    }
+    
+    body {
+        text-align: center;
+        background: #fff url(359582.jpg) center center fixed no-repeat;
+        background-size: cover;
+    }
+    
+    h2 {
+        color: antiquewhite;
+    }
+    
+    @media (min-width: 487px) {
+        .rwd-table td:before {
+            display: none;
+        }
+        .rwd-table th,
+        .rwd-table td {
+            display: table-cell;
+            padding: 0em 0em;
+        }
+        .rwd-table th:first-child,
+        .rwd-table td:first-child {
+            padding-left: 0;
+        }
+        .rwd-table th:last-child,
+        .rwd-table td:last-child {
+            padding-right: 0;
+        }
+        .rwd-table th,
+        .rwd-table td {
+            padding: 0em !important;
+        }
+    }
+</style>
+
+<body>
+    <h2>書籍列表</h2>
+    <table class="rwd-table">
+
+        <tr>
+
+            <th>卷數</th>
+
+            <th>書名</th>
+
+            <th>發售日期</th>
+
+            <th>ISBN</th>
+
+            <th>書籍預覽</th>
+
+        </tr>
+
+        <tr>
+
+            <td data-th="卷數">1</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域1&nbsp;艾恩葛朗特</td>
+
+            <td data-th="發售日期">2009年12月26日</td>
+
+            <td data-th="ISBN">978-986-237-399-6</td>
+
+            <td data-th="書籍預覽"><img src="1.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">2</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域2&nbsp;艾恩葛朗特</td>
+
+            <td data-th="發售日期">2010年4月28日</td>
+
+            <td data-th="ISBN">978-986-237-586-0</td>
+
+            <td data-th="書籍預覽"><img src="2.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">3</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域3&nbsp;妖精之舞</td>
+
+            <td data-th="發售日期">2010年9月8日</td>
+
+            <td data-th="ISBN">978-986-237-824-3</td>
+
+            <td data-th="書籍預覽"><img src="3.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">4</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域4&nbsp;妖精之舞</td>
+
+            <td data-th="發售日期">2010年11月26日</td>
+
+            <td data-th="ISBN">978-986-237-916-5</td>
+
+            <td data-th="書籍預覽"><img src="4.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">5</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域5&nbsp;幽靈子彈</td>
+
+            <td data-th="發售日期">2011年1月28日</td>
+
+            <td data-th="ISBN">978-986-287-021-1</td>
+
+            <td data-th="書籍預覽"><img src="5.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">6</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域6&nbsp;幽靈子彈</td>
+
+            <td data-th="發售日期">2011年5月20日</td>
+
+            <td data-th="ISBN">978-986-287-154-6</td>
+
+            <td data-th="書籍預覽"><img src="6.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">7</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域7&nbsp;聖母聖詠</td>
+
+            <td data-th="發售日期">2011年11月2日</td>
+
+            <td data-th="ISBN">978-986-287-405-9</td>
+
+            <td data-th="書籍預覽"><img src="7.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">8</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域8<br>Early and late</td>
+
+            <td data-th="發售日期">2012年2月1日</td>
+
+            <td data-th="ISBN">978-986-287-549-0</td>
+
+            <td data-th="書籍預覽"><img src="8.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">9</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 9<br>Alicization beginning</td>
+
+            <td data-th="發售日期">2012年8月9日</td>
+
+            <td data-th="ISBN">978-986-287-820-0</td>
+
+            <td data-th="書籍預覽"><img src="9.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">10</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 10<br>Alicization Running</td>
+
+            <td data-th="發售日期">2013年2月14日</td>
+
+            <td data-th="ISBN">978-986-325-155-2</td>
+
+            <td data-th="書籍預覽"><img src="10.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">11</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 11<br>Alicization turning</td>
+
+            <td data-th="發售日期">2013年8月16日</td>
+
+            <td data-th="ISBN">978-986-325-535-2</td>
+
+            <td data-th="書籍預覽"><img src="11.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">12</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 12<br>Alicization rising</td>
+
+            <td data-th="發售日期">2014年2月4日</td>
+
+            <td data-th="ISBN">978-986-325-785-1</td>
+
+            <td data-th="書籍預覽"><img src="12.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">13</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 13<br>Alicization dividing</td>
+
+            <td data-th="發售日期">2014年4月19日</td>
+
+            <td data-th="ISBN">978-986-325-897-1</td>
+
+            <td data-th="書籍預覽"><img src="13.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">14</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 14<br>Alicization uniting</td>
+
+            <td data-th="發售日期">2014年11月6日</td>
+
+            <td data-th="ISBN">978-986-366-179-5</td>
+
+            <td data-th="書籍預覽"><img src="14.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">15</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 15<br>Alicization invading</td>
+
+            <td data-th="發售日期">2015年4月17日</td>
+
+            <td data-th="ISBN">978-986-366-461-1</td>
+
+            <td data-th="書籍預覽"><img src="15.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">16</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 16<br>Alicization exploding</td>
+
+            <td data-th="發售日期">2016年2月4日（限定版）<br>2016年2月10日（普通版）</td>
+
+            <td data-th="ISBN">4712961070409（限定版）<br>978-986-366-911-1（普通版）</td>
+
+            <td data-th="書籍預覽"><img src="16.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">17</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 17<br>Alicization awakening</td>
+
+            <td data-th="發售日期">2016年12月16日大大感謝祭300本首發<br>2016年12月19日</td>
+
+            <td data-th="ISBN">978-986-473-418-4</td>
+
+            <td data-th="書籍預覽"><img src="17.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">18</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 18<br>Alicization lasting</td>
+
+            <td data-th="發售日期">2017年4月13日（限定版）<br>2017年4月27日（普通版）</td>
+
+            <td data-th="ISBN">978-986-473-610-2</td>
+
+            <td data-th="書籍預覽"><img src="18.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">19</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 19<br>Moon cradle</td>
+
+            <td data-th="發售日期">2018年2月7日</td>
+
+            <td data-th="ISBN">978-957-564-006-4</td>
+
+            <td data-th="書籍預覽"><img src="19.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">20</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 20<br>Moon cradle</td>
+
+            <td data-th="發售日期">2018年8月16日（限定版）<br>2018年8月27日（普通版)</td>
+
+            <td data-th="ISBN">978-957-564-290-7</td>
+
+            <td data-th="書籍預覽"><img src="20.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td data-th="卷數">21</td>
+
+            <td data-th="書名">Sword Art Online 刀劍神域 21<br>Unital ring I</td>
+
+            <td data-th="發售日期">2019年9月5日</td>
+
+            <td data-th="ISBN">4713510133668（限定版）<br>978-957-743-216-2（普通版）</td>
+
+            <td data-th="書籍預覽"><img src="21.jpg"></td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
